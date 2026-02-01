@@ -1,0 +1,18 @@
+@mixin retina {
+  @media (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi) {
+    @content;
+  }
+}
+
+@mixin webp {
+  .webp & {
+    @content;
+  }
+}
+
+@mixin noWebp {
+  .no-webp & {
+    @content;
+  }
+}
